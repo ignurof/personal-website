@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --max-width: 1280px;
+}
+
+body {
+    background-color: #1b1b1b;
+    color: #eeeaea;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    text-align: center;
+}
+
+header {
+    margin-top: 4em;
+    margin-bottom: 8em;
+}
+header p {
+    margin: 0;
+}
+header h1 {
+    font-size: 4em;
+    margin: 0;
+}
+
+.websites {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 1em;
+    row-gap: 1em;
+    width: 50%;
+}
+
+.card {
+    /* background-color: white; */
+    /* color: black; */
+    border: 2px solid white;
+    border-radius: .2em;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 18em;
+    height: 18em;
+    padding-bottom: .2em;
+}
+.card img {
+    width: 100%;
+    height: 70%;
+    object-fit: contain;
+    border-bottom: .2em solid white;
+}
+.card h2 {
+    margin: 0;
+    text-align: start;
+    padding-left: .4em;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 18%;
+    display: flex;
+    align-items: center;
+}
+ul li {
+    border: 2px solid rgb(179, 176, 176);
+    padding: .2em;
+    border-radius: .4em;
+    margin-left: .6em;
+}
+
+footer {
+    color: #4d4c4c;
+    /* Place it at the bottom of the screen using fixed position */
+    position: fixed;
+    bottom: 0;
+    width: var(--max-width);
+}
+footer a {
+    color: #543da7;
+}
+footer a:hover {
+    color: #7660c9;
+}
